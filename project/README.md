@@ -1,64 +1,78 @@
-```markdown
-# Create Kawkab
+# Kawkab Framework
 
-`create-kawkab-app` is a command-line interface (CLI) tool to create projects based on the Kawkab framework. This tool helps you quickly start new projects with a template and automatically installs the required dependencies.
+A powerful Node.js/TypeScript framework for building scalable backend applications and APIs.
 
 ## Features
 
-- Create a new project based on the Kawkab framework.
-- Automatically installs dependencies using `npm`.
-- Quickly and easily set up new projects.
-
-## Prerequisites
-
-- Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
-- Ensure that you're using a recent version of `npm`.
+- Built with TypeScript for type safety and better developer experience
+- Modular architecture for scalable applications
+- Environment-based configuration
+- CLI tool for project management
+- Production-ready setup
 
 ## Installation
 
-To install the tool, you can use either npm or yarn. Here's the installation method using npm:
-
 ```bash
-npm install -g create-kawkab-app
+npx create-kawkab init my-kawkab-app
 ```
 
-## Usage
+## Quick Start
 
-To create a new project using the Kawkab framework, use the following command in the terminal:
-
+1. Clone the repository
+2. Install dependencies:
 ```bash
-npx create-kawkab-app init <project-name>
+npm install
+```
+3. Copy the environment file:
+```bash
+cp .env.example .env.development
+```
+4. Start development server:
+```bash
+npm run dev
 ```
 
-### Example
+## Available Scripts
 
-If you want to create a new project named `my-kawkab-app`, run:
+- `npm run dev` - Start development server with hot-reload
+- `npm run build` - Build the project for production
+- `npm start` - Run the production server
+- `npm run remove` - Remove build directory
+- `npm run kawkab` - Run CLI commands
 
-```bash
-npx create-kawkab-app init my-kawkab-app
+## Environment Variables
+
+The project uses different environment files for different stages:
+- `.env.development` - Development environment
+- `.env.production` - Production environment
+- `.env.example` - Example environment template
+
+## Project Structure
+
+```
+kawkab/
+├── app/              # Application source code
+├── storage/          # Storage directory
+├── .dist/            # Compiled files
+├── cli.ts            # CLI implementation
+├── index.ts          # Application entry point
+└── tsconfig.json     # TypeScript configuration
 ```
 
-The project template will be copied to the new directory and dependencies will be installed.
+## Technologies
 
-## Dependencies
-
-- **commander**: A library for building command-line interfaces.
+- Node.js
+- Bun.js
+- TypeScript
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-## Contributing
-
-If you'd like to contribute to this project, feel free to open Pull Requests or create issues via the "Issues" section of this repository.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Author
 
-- **Hassan Kerdash** – [Hassan Kerdash](https://www.linkedin.com/in/hassankerdash/)
-```
+Hassan Kerdash
 
-### Notes:
-- **Installation**: This explains how to install the tool globally with `npm install -g create-kawkab-app`.
-- **Usage**: Describes how to use the CLI to create a new project.
-- **Dependencies**: Mentions the `commander` library used to build the CLI.
-- **Contributing**: Encourages contributions through Pull Requests and Issues.
+## Keywords
+
+kawkab, framework, nodejs, bunjs, javascript, js, typescript, ts, backend, api
