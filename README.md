@@ -1,63 +1,68 @@
-# Create Kawkab
+# Create Kawkab  
 
-`create-kawkab-app` is a command-line interface (CLI) tool to create projects based on the Kawkab framework. This tool helps you quickly start new projects with a template and automatically installs the required dependencies.
+**`create-kawkab-app`** is a command-line interface (CLI) tool to create projects based on the **Kawkab** framework. This tool helps you quickly start new projects with a template and automatically installs the required dependencies.  
 
-## Features
+## Features  
 
-- Create a new project based on the Kawkab framework.
-- Automatically installs dependencies using `npm`.
-- Quickly and easily set up new projects.
+- Create a new project based on the Kawkab framework.  
+- Automatically installs dependencies using **npm** or **Bun**.  
+- Quickly and easily set up new projects.  
 
-## Prerequisites
+## Prerequisites  
 
-- Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
-- Ensure that you're using a recent version of `npm`.
+- Make sure you have [Node.js](https://nodejs.org/) or [Bun](https://bun.sh/) installed on your machine.  
+- Ensure that you're using a recent version of your chosen package manager (**npm** or **Bun**).  
 
-## Installation
+## Installation  
 
-To install the tool, you can use either npm or yarn. Here's the installation method using npm:
+### Using npm  
 
-```bash
-npm install -g create-kawkab-app
-```
+To install the tool globally with **npm**, run:  
 
-## Usage
+```bash  
+npm install -g create-kawkab-app  
+```  
 
-To create a new project using the Kawkab framework, use the following command in the terminal:
+### Using Bun  
 
-```bash
-npx create-kawkab-app init <project-name>
-```
+To install the tool globally with **Bun**, run:  
 
-### Example
+```bash  
+bun add -g create-kawkab-app  
+```  
 
-If you want to create a new project named `my-kawkab-app`, run:
+## Usage  
 
-```bash
-npx create-kawkab-app init my-kawkab-app
-```
+To create a new project using the Kawkab framework, you can use either **npx** (with npm) or **bunx** (with Bun):  
 
-The project template will be copied to the new directory and dependencies will be installed.
+### Using npm  
 
-## Dependencies
+Run the following command to create a new project:  
 
-- **commander**: A library for building command-line interfaces.
+```bash  
+npx create-kawkab-app init <project-name>  
+```  
 
-## License
+### Using Bun  
 
-This project is licensed under the [MIT License](LICENSE).
+Run the following command to create a new project:  
 
-## Contributing
+```bash  
+bunx create-kawkab-app init <project-name>  
+```  
 
-If you'd like to contribute to this project, feel free to open Pull Requests or create issues via the "Issues" section of this repository.
+### Example  
 
-## Author
+If you want to create a new project named `my-kawkab-app`, use the following command:  
 
-- **Hassan Kerdash** – [Hassan Kerdash](https://www.linkedin.com/in/hassankerdash/)
-```
+- With **npm**:  
+  ```bash  
+  npx create-kawkab-app init my-kawkab-app  
+  ```  
 
-### Notes:
-- **Installation**: This explains how to install the tool globally with `npm install -g create-kawkab-app`.
-- **Usage**: Describes how to use the CLI to create a new project.
-- **Dependencies**: Mentions the `commander` library used to build the CLI.
-- **Contributing**: Encourages contributions through Pull Requests and Issues.
+- With **Bun**:  
+  ```bash  
+  bunx create-kawkab-app init my-kawkab-app  
+  ```  
+
+The project template will be copied to the new directory and dependencies will be installed automatically. 

@@ -1,6 +1,6 @@
 {
     "name": "create-kawkab-app",
-    "version": "1.0.0-alpha.18",
+    "version": "1.0.0-alpha.19",
     "description": "A CLI tool to create projects based on Kawkab framework",
     "main": "create-kawkab-app.mjs",
     "bin": {
