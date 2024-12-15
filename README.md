@@ -1,4 +1,3 @@
-```markdown
 # Create Kawkab
 
 `create-kawkab-app` is a command-line interface (CLI) tool to create projects based on the Kawkab framework. This tool helps you quickly start new projects with a template and automatically installs the required dependencies.
