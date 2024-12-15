@@ -80,14 +80,6 @@ async function copyTemplate(name) {
     return;
   }
 
-  try {
-    const { stdout } = await execPromise('npm --version');
-    console.log(chalk.green(` npm detected (version: ${stdout.trim()}).`));
-  } catch {
-    console.error(chalk.red(`❌ npm is not installed. Please install it first.`));
-    return;
-  }
-
   const installSpinner = ora(chalk.cyan(`🔧 Installing dependencies...`)).start();  
 
   try {
